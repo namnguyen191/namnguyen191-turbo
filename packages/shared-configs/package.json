@@ -1,0 +1,22 @@
+{
+  "name": "@repo/shared-configs",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./eslint/base": "./eslint/base.js",
+    "./typescript/base": "./typescript/base.json"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "catalog:eslint-latest",
+    "@typescript-eslint/parser": "catalog:eslint-latest",
+    "eslint": "catalog:eslint-latest",
+    "eslint-config-prettier": "catalog:eslint-latest",
+    "eslint-plugin-only-warn": "catalog:eslint-latest",
+    "eslint-plugin-prettier": "catalog:eslint-latest",
+    "eslint-plugin-simple-import-sort": "catalog:eslint-latest",
+    "eslint-plugin-turbo": "catalog:eslint-latest",
+    "typescript-eslint": "catalog:eslint-latest",
+    "typescript": "catalog:typescript-latest"
+  }
+}
