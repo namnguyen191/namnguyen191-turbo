@@ -1,0 +1,13 @@
+{
+  "extends": "@repo/shared-configs/typescript/base",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}

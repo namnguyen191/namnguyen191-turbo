@@ -1,0 +1,45 @@
+{
+  "name": "@namnguyen191/common-js-helper",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run --coverage",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "peerDependencies": {
+    "zod": "catalog:",
+    "lodash-es": "catalog:",
+    "type-fest": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/shared-configs": "workspace:*",
+    "@types/node": "catalog:typescript-latest",
+    "@types/lodash-es": "catalog:",
+    "@vitest/coverage-v8": "catalog:vite-latest",
+    "typescript": "catalog:typescript-latest",
+    "vite": "catalog:vite-latest",
+    "vite-plugin-dts": "catalog:vite-latest",
+    "vitest": "catalog:vite-latest"
+  },
+  "exports": {
+    "./dom-utils": {
+      "import": "./dist/dom-utils.js",
+      "types": "./dist/types/dom-utils.d.ts"
+    },
+    "./object-manipulation": {
+      "import": "./dist/object-manipulation.js",
+      "types": "./dist/types/object-manipulation.d.ts"
+    },
+    "./time": {
+      "import": "./dist/time.js",
+      "types": "./dist/types/time.d.ts"
+    }
+  }
+}
