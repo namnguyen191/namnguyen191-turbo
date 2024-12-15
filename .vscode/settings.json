@@ -21,6 +21,7 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     "**/node_modules": true,
+    "**/.turbo": true,
     "**/out-tsc": true,
     "**/.angular": true,
     "**/.nx": true,

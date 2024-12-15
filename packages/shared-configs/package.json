@@ -4,8 +4,9 @@
   "type": "module",
   "private": true,
   "exports": {
-    "./eslint/base": "./eslint/base.js",
-    "./typescript/base": "./typescript/base.json"
+    "./eslint/base": "./eslint/eslint.config.base.js",
+    "./typescript/base": "./typescript/tsconfig.base.json",
+    "./typescript/vitespec_base": "./typescript/tsconfig.vitespec.base.json"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "catalog:eslint-latest",
