@@ -9,6 +9,7 @@ export const parentContains = (params: {
     if (parent.getAttribute(attrName) === attrValue) {
       return true;
     }
+
     parent = parent.parentElement;
   }
 

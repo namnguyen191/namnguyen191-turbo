@@ -5,11 +5,13 @@
   "private": true,
   "exports": {
     "./eslint/base": "./eslint/eslint.config.base.js",
+    "./eslint/angular_base": "./eslint/eslint-angular.config.base.js",
     "./typescript/base": "./typescript/tsconfig.base.json",
     "./typescript/vitespec_base": "./typescript/tsconfig.vitespec.base.json",
     "./typescript/angular_base": "./typescript/tsconfig.angular.base.json"
   },
   "devDependencies": {
+    "angular-eslint": "catalog:angular-latest",
     "@typescript-eslint/eslint-plugin": "catalog:eslint-latest",
     "@typescript-eslint/parser": "catalog:eslint-latest",
     "eslint": "catalog:eslint-latest",
@@ -18,6 +20,8 @@
     "eslint-plugin-prettier": "catalog:eslint-latest",
     "eslint-plugin-simple-import-sort": "catalog:eslint-latest",
     "eslint-plugin-turbo": "catalog:eslint-latest",
+    "eslint-import-resolver-typescript": "catalog:eslint-latest",
+    "eslint-plugin-import-x": "catalog:eslint-latest",
     "typescript-eslint": "catalog:eslint-latest",
     "typescript": "catalog:typescript-latest"
   }
