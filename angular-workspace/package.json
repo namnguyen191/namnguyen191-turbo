@@ -5,8 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "publish-angular-lib": "pnpm publish dist/common-angular-helper"
   },
   "private": true,
   "type": "module",
