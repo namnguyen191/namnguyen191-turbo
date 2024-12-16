@@ -1,0 +1,17 @@
+{
+  "extends": "@repo/shared-configs/typescript/angular_base",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc"
+  },
+  "exclude": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ]
+}

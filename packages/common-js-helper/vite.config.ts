@@ -17,7 +17,7 @@ const viteConfig = defineViteConfig({
   ],
   build: {
     lib: {
-      entry: ['src/dom-utils.ts', 'src/object-manipulation.ts', 'src/time.ts'],
+      entry: ['src/index.ts', 'src/dom-utils.ts', 'src/object-manipulation.ts', 'src/time.ts'],
       formats: ['es'],
     },
     emptyOutDir: true,

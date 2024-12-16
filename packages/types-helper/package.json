@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.0",
+  "version": "1.1.0",
   "type": "module",
   "sideEffects": false,
   "scripts": {
@@ -26,13 +26,17 @@
     "vitest": "catalog:vite-latest"
   },
   "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js"
+    },
     "./zod-types/custom-zod-types": {
-      "import": "./dist/custom-zod-types.js",
-      "types": "./dist/types/zod-types/custom-zod-types.d.ts"
+      "types": "./dist/types/zod-types/custom-zod-types.d.ts",
+      "import": "./dist/custom-zod-types.js"
     },
     "./zod-types/utils": {
-      "import": "./dist/utils.js",
-      "types": "./dist/types/zod-types/utils.d.ts"
+      "types": "./dist/types/zod-types/utils.d.ts",
+      "import": "./dist/utils.js"
     }
   }
 }

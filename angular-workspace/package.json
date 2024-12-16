@@ -1,0 +1,35 @@
+{
+  "name": "angular-workspace",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@angular/animations": "catalog:angular-latest",
+    "@angular/common": "catalog:angular-latest",
+    "@angular/compiler": "catalog:angular-latest",
+    "@angular/core": "catalog:angular-latest",
+    "@angular/forms": "catalog:angular-latest",
+    "@angular/platform-browser": "catalog:angular-latest",
+    "@angular/platform-browser-dynamic": "catalog:angular-latest",
+    "@angular/router": "catalog:angular-latest",
+    "rxjs": "catalog:",
+    "tslib": "catalog:",
+    "zone.js": "catalog:"
+  },
+  "devDependencies": {
+    "type-fest": "catalog:",
+    "@repo/shared-configs": "workspace:*",
+    "@angular-devkit/build-angular": "catalog:angular-latest",
+    "@angular/cli": "catalog:angular-latest",
+    "@angular/compiler-cli": "catalog:angular-latest",
+    "ng-packagr": "catalog:angular-latest",
+    "typescript": "catalog:angular-latest"
+  }
+}

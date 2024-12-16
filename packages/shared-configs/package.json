@@ -6,7 +6,8 @@
   "exports": {
     "./eslint/base": "./eslint/eslint.config.base.js",
     "./typescript/base": "./typescript/tsconfig.base.json",
-    "./typescript/vitespec_base": "./typescript/tsconfig.vitespec.base.json"
+    "./typescript/vitespec_base": "./typescript/tsconfig.vitespec.base.json",
+    "./typescript/angular_base": "./typescript/tsconfig.angular.base.json"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "catalog:eslint-latest",

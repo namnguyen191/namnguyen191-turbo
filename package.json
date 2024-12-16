@@ -11,6 +11,7 @@
     "start-local-registry": "verdaccio"
   },
   "devDependencies": {
+    "@angular/cli": "catalog:angular-latest",
     "@changesets/cli": "catalog:",
     "prettier": "catalog:",
     "turbo": "catalog:turbo-latest",

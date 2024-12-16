@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.0",
+  "version": "1.1.0",
   "type": "module",
   "sideEffects": false,
   "scripts": {
@@ -29,6 +29,10 @@
     "vitest": "catalog:vite-latest"
   },
   "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
     "./dom-utils": {
       "import": "./dist/dom-utils.js",
       "types": "./dist/types/dom-utils.d.ts"

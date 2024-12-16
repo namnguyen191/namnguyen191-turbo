@@ -17,7 +17,7 @@ const viteConfig = defineViteConfig({
   ],
   build: {
     lib: {
-      entry: ['src/zod-types/utils.ts', 'src/zod-types/custom-zod-types.ts'],
+      entry: ['src/index.ts', 'src/zod-types/custom-zod-types.ts', 'src/zod-types/utils.ts'],
       formats: ['es'],
     },
     emptyOutDir: true,
