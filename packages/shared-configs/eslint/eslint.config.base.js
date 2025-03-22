@@ -89,6 +89,9 @@ export const config = [
           alwaysTryTypes: true,
         }),
       ],
+      'import/resolver': {
+        typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
+      },
     },
   },
 ];

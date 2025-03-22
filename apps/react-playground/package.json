@@ -1,0 +1,25 @@
+{
+  "name": "react-playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "catalog:react-latest",
+    "react-dom": "catalog:react-latest"
+  },
+  "devDependencies": {
+    "@repo/shared-configs": "workspace:*",
+    "typescript": "catalog:typescript-latest",
+    "vite": "catalog:vite-latest",
+    "@vitejs/plugin-react-swc": "catalog:react-latest",
+    "@types/react": "catalog:react-latest",
+    "@types/react-dom": "catalog:react-latest",
+    "globals": "catalog:"
+  }
+}

@@ -6,6 +6,7 @@
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
     "build:all": "turbo build",
+    "build:packages": "turbo build --filter=./packages/*",
     "build:affected": "turbo build --affected",
     "dev:all": "turbo dev",
     "lint:all": "turbo lint",
@@ -28,7 +29,7 @@
     "typescript": "catalog:typescript-latest",
     "verdaccio": "catalog:"
   },
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@10.6.5",
   "engines": {
     "node": ">=22"
   }

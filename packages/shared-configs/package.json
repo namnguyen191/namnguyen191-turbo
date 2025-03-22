@@ -6,9 +6,11 @@
   "exports": {
     "./eslint/base": "./eslint/eslint.config.base.js",
     "./eslint/angular_base": "./eslint/eslint-angular.config.base.js",
+    "./eslint/react_base": "./eslint/eslint-react.config.base.js",
     "./typescript/base": "./typescript/tsconfig.base.json",
     "./typescript/vitespec_base": "./typescript/tsconfig.vitespec.base.json",
-    "./typescript/angular_base": "./typescript/tsconfig.angular.base.json"
+    "./typescript/angular_base": "./typescript/tsconfig.angular.base.json",
+    "./typescript/react_base": "./typescript/tsconfig.react.base.json"
   },
   "devDependencies": {
     "angular-eslint": "catalog:angular-latest",
@@ -22,7 +24,11 @@
     "eslint-plugin-turbo": "catalog:eslint-latest",
     "eslint-import-resolver-typescript": "catalog:eslint-latest",
     "eslint-plugin-import-x": "catalog:eslint-latest",
-    "typescript-eslint": "catalog:eslint-latest",
-    "typescript": "catalog:typescript-latest"
+    "typescript": "catalog:typescript-latest",
+    "globals": "catalog:",
+    "@eslint/js": "catalog:eslint-latest",
+    "eslint-plugin-react-hooks": "catalog:eslint-latest",
+    "eslint-plugin-react-refresh": "catalog:eslint-latest",
+    "typescript-eslint": "catalog:eslint-latest"
   }
 }
