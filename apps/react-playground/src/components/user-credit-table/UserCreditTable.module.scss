@@ -1,0 +1,27 @@
+$back-drop-z-index: 1;
+$read-mode-z-index: $back-drop-z-index + 1;
+
+.editable-field {
+  .back-drop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: background 250ms ease-out;
+    z-index: $back-drop-z-index;
+
+    &:hover {
+      background: var(--cds-layer-selected-hover);
+    }
+  }
+
+  .read-mode {
+    position: relative;
+    z-index: $read-mode-z-index;
+  }
+}
+
+td:has(.editable-field) {
+  position: relative !important;
+}

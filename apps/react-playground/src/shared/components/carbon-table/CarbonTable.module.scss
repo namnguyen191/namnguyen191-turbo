@@ -1,0 +1,43 @@
+.table-wrapper {
+  width: var(--table-total-width);
+
+  .header {
+    width: var(--header-width) !important;
+    position: relative !important;
+
+    .resizer {
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 20px;
+      height: 100%;
+      cursor: col-resize;
+      // Need to be greater than header great index to prevent hover state on the next header
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 200ms ease-in;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background: black;
+        left: -5px;
+        margin: auto;
+      }
+
+      &.is-resizing {
+        &::before {
+          background: green;
+        }
+      }
+    }
+
+    &:hover {
+      .resizer {
+        opacity: 1;
+      }
+    }
+  }
+}

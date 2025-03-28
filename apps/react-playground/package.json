@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "react": "catalog:react-latest",
-    "react-dom": "catalog:react-latest"
+    "react-dom": "catalog:react-latest",
+    "@tanstack/react-table": "catalog:react-latest",
+    "@carbon/react": "catalog:react-latest"
   },
   "devDependencies": {
     "@repo/shared-configs": "workspace:*",
@@ -20,6 +22,8 @@
     "@vitejs/plugin-react-swc": "catalog:react-latest",
     "@types/react": "catalog:react-latest",
     "@types/react-dom": "catalog:react-latest",
-    "globals": "catalog:"
+    "globals": "catalog:",
+    "sass": "catalog:",
+    "@faker-js/faker": "catalog:"
   }
 }
