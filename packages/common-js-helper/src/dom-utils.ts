@@ -12,6 +12,7 @@ export const parentContains = (params: {
   while (parent) {
     const matchedAttr = parent.getAttribute(attrName);
     if (matchedAttr === null) {
+      parent = parent.parentElement;
       continue;
     }
 
