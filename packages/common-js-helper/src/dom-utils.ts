@@ -2,16 +2,31 @@ export const parentContains = (params: {
   ele: HTMLElement;
   attrName: string;
   attrValue: string;
-}): boolean => {
+}): {
+  contains: boolean;
+  chain: string[];
+} => {
   const { ele, attrName, attrValue } = params;
   let parent: HTMLElement | null = ele.parentElement;
+  const chain: string[] = [];
   while (parent) {
-    if (parent.getAttribute(attrName) === attrValue) {
-      return true;
+    const matchedAttr = parent.getAttribute(attrName);
+    if (matchedAttr === null) {
+      continue;
     }
 
+    chain.push(matchedAttr);
+    if (matchedAttr === attrValue) {
+      return {
+        contains: true,
+        chain,
+      };
+    }
     parent = parent.parentElement;
   }
 
-  return false;
+  return {
+    contains: false,
+    chain,
+  };
 };
