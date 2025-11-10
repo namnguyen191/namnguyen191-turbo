@@ -9,5 +9,5 @@ export const ZodNonEmptyPrimitive = z.union([
 ]);
 
 export const ZodObjectType = z.record(z.string(), z.any(), {
-  invalid_type_error: 'must be an object with key-value',
+  error: () => 'must be an object with key-value',
 });

@@ -30,6 +30,10 @@
     "@angular/cli": "catalog:angular-latest",
     "@angular/compiler-cli": "catalog:angular-latest",
     "ng-packagr": "catalog:angular-latest",
-    "typescript": "catalog:angular-latest"
+    "typescript": "catalog:angular-latest",
+    "@eslint/js": "catalog:eslint-latest",
+    "@types/node": "catalog:typescript-latest",
+    "eslint": "catalog:eslint-latest",
+    "typescript-eslint": "catalog:eslint-latest"
   }
 }

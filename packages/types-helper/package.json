@@ -23,7 +23,10 @@
     "typescript": "catalog:typescript-latest",
     "vite": "catalog:vite-latest",
     "vite-plugin-dts": "catalog:vite-latest",
-    "vitest": "catalog:vite-latest"
+    "vitest": "catalog:vite-latest",
+    "@eslint/js": "catalog:eslint-latest",
+    "eslint": "catalog:eslint-latest",
+    "typescript-eslint": "catalog:eslint-latest"
   },
   "exports": {
     ".": {

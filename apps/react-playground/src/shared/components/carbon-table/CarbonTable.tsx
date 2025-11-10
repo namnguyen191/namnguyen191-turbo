@@ -1,11 +1,4 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@carbon/react/lib/components/DataTable';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@carbon/react';
 import { type ColumnDef, flexRender, getCoreRowModel, useReactTable } from '@tanstack/react-table';
 import { type ReactElement, useCallback, useMemo } from 'react';
 
@@ -45,6 +38,7 @@ export const CarbonTable = <T extends TableRowData>(props: CarbonTableProps<T>):
     }));
   }, [columns]);
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
     data,
     columns: columnsDef,

@@ -13,17 +13,25 @@
     "react": "catalog:react-latest",
     "react-dom": "catalog:react-latest",
     "@tanstack/react-table": "catalog:react-latest",
-    "@carbon/react": "catalog:react-latest"
+    "@carbon/react": "catalog:carbon-latest"
   },
   "devDependencies": {
     "@repo/shared-configs": "workspace:*",
     "typescript": "catalog:typescript-latest",
     "vite": "catalog:vite-latest",
     "@vitejs/plugin-react-swc": "catalog:react-latest",
+    "@vitejs/plugin-react": "catalog:react-latest",
     "@types/react": "catalog:react-latest",
     "@types/react-dom": "catalog:react-latest",
+    "babel-plugin-react-compiler": "catalog:react-latest",
     "globals": "catalog:",
     "sass": "catalog:",
-    "@faker-js/faker": "catalog:"
+    "@faker-js/faker": "catalog:",
+    "@eslint/js": "catalog:eslint-latest",
+    "@types/node": "catalog:typescript-latest",
+    "eslint": "catalog:eslint-latest",
+    "eslint-plugin-react-hooks": "catalog:eslint-latest",
+    "eslint-plugin-react-refresh": "catalog:eslint-latest",
+    "typescript-eslint": "catalog:eslint-latest"
   }
 }
