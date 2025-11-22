@@ -1,0 +1,9 @@
+{
+  "extends": "@repo/shared-configs/typescript/base",
+  "compilerOptions": {
+    "outDir": "./build",
+    "rootDir": "./src",
+    "emitDeclarationOnly": false
+  },
+  "include": ["src/**/*"]
+}

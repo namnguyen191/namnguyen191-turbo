@@ -1,0 +1,26 @@
+{
+  "name": "mcp-example",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp -r src/data build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@repo/shared-configs": "workspace:*",
+    "typescript": "catalog:typescript-latest",
+    "@eslint/js": "catalog:eslint-latest",
+    "@types/node": "catalog:typescript-latest",
+    "eslint": "catalog:eslint-latest",
+    "typescript-eslint": "catalog:eslint-latest"
+  }
+}
