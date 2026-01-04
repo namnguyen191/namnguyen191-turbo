@@ -35,17 +35,25 @@ jobs:
           pnpm i --frozen-lockfile
           pnpm turbo build --filter=main-site
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: main-site-dist
+          path: apps/main-site/dist
+
   deploy:
     if: github.event_name == 'push'
     needs: build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v6
+      - name: Download build artifacts
+        uses: actions/download-artifact@v6
+        with:
+          name: main-site-dist
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: apps/main-site/dist
+          folder: .
