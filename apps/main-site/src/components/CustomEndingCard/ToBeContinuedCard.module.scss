@@ -1,0 +1,32 @@
+.to-be-continued-card-container {
+  .card-front-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    background-color: #fff;
+
+    span {
+      text-align: center;
+      font-size: 3rem;
+      color: #b532ab;
+    }
+
+    svg {
+      margin: 0 !important;
+    }
+  }
+
+  .card-back-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 1.7rem;
+    font-size: 2rem;
+    font-style: italic;
+  }
+}

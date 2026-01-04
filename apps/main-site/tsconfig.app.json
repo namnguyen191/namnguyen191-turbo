@@ -1,0 +1,4 @@
+{
+  "extends": "@repo/shared-configs/typescript/react_base",
+  "include": ["src"]
+}

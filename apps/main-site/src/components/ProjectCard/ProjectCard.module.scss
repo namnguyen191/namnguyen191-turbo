@@ -1,0 +1,118 @@
+.project-card-container {
+  .front-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3fr 5fr;
+
+    .top {
+      position: relative;
+      background-image:
+        linear-gradient(to right bottom, #000, var(--card-front-bg)), var(--card-front-bg-img-url);
+      background-size: cover;
+      background-blend-mode: screen;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      border-top-left-radius: 0.3rem;
+      border-top-right-radius: 0.3rem;
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: right;
+        color: var(--card-front-title-color);
+        position: absolute;
+        top: 4rem;
+        right: 1.25rem;
+        width: 75%;
+        line-height: 2.4rem;
+
+        span {
+          padding: 0.625rem 1.6rem;
+          box-decoration-break: clone;
+          background-image: var(--card-front-title-bg);
+        }
+      }
+    }
+
+    .bottom {
+      padding: 1.875rem;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+
+        li {
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 700;
+          color: #54483a;
+          padding: 0.85rem;
+
+          &:not(:last-child) {
+            border-bottom: 0.1rem solid #aaa;
+          }
+        }
+      }
+    }
+  }
+
+  .back-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 1.7rem;
+    background-image: var(--card-back-bg);
+
+    a {
+      display: block;
+    }
+
+    .description {
+      color: #f9f7f6;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 2rem;
+    }
+
+    .siteUrl {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition: all 0.2s;
+
+      background-image: var(--card-back-url-bg);
+
+      @media only screen and (hover: none) {
+        background-image: var(--card-back-non-hover-url-bg);
+      }
+
+      &:hover {
+        transform: skewY(1deg) skewX(10deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .githubUrl {
+      transition: all 200ms ease;
+      font-size: 3.5rem;
+      color: #101d2c;
+      width: 3rem;
+      height: 3rem;
+
+      &:hover {
+        color: var(--card-back-github-url-hover-color) !important;
+        transform: translateY(-0.8rem);
+      }
+    }
+  }
+}
