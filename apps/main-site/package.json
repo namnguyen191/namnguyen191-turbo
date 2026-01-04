@@ -1,0 +1,45 @@
+{
+  "name": "main-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@carbon/react": "catalog:carbon-latest",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.6",
+    "@mui/material": "^7.3.6",
+    "@tanstack/react-table": "catalog:react-latest",
+    "axios": "^1.13.2",
+    "chroma-js": "^3.2.0",
+    "react": "catalog:react-latest",
+    "react-dom": "catalog:react-latest",
+    "reset-css": "^5.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:eslint-latest",
+    "@faker-js/faker": "catalog:",
+    "@repo/shared-configs": "workspace:*",
+    "@types/chroma-js": "^3.1.2",
+    "@types/node": "catalog:typescript-latest",
+    "@types/react": "catalog:react-latest",
+    "@types/react-dom": "catalog:react-latest",
+    "@vitejs/plugin-react": "catalog:react-latest",
+    "@vitejs/plugin-react-swc": "catalog:react-latest",
+    "babel-plugin-react-compiler": "catalog:react-latest",
+    "eslint": "catalog:eslint-latest",
+    "eslint-plugin-react-hooks": "catalog:eslint-latest",
+    "eslint-plugin-react-refresh": "catalog:eslint-latest",
+    "globals": "catalog:",
+    "sass": "catalog:",
+    "typescript": "catalog:typescript-latest",
+    "typescript-eslint": "catalog:eslint-latest",
+    "vite": "catalog:vite-latest"
+  }
+}

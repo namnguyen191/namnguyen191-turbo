@@ -1,0 +1,19 @@
+.type-writer-container {
+  display: inline;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  border-right: 0.2rem solid #777;
+  width: min-content;
+  animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+  from {
+    border-color: rgba(7, 7, 7, 1);
+  }
+
+  to {
+    border-color: rgba(7, 7, 7, 0.1);
+  }
+}

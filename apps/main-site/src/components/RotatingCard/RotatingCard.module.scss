@@ -1,0 +1,59 @@
+.rotating-card-container {
+  position: relative;
+  perspective: 200rem;
+
+  /* Support for non-hover */
+  @media only screen and (hover: none) {
+    height: fit-content;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:hover .card__side--front {
+    transform: rotateY(-180deg);
+    /* Support for non-hover */
+    @media only screen and (hover: none) {
+      transform: rotate(0);
+    }
+  }
+
+  &:hover .card__side--back {
+    transform: rotateY(0deg);
+    /* Support for non-hover */
+    @media only screen and (hover: none) {
+      transform: rotate(0);
+    }
+  }
+
+  .card__side {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* Support for non-hover */
+    @media only screen and (hover: none) {
+      position: relative;
+    }
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    /* Support for non-hover */
+    @media only screen and (hover: none) {
+      box-shadow: none;
+    }
+
+    &--front {
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      /* Support for non-hover */
+      @media only screen and (hover: none) {
+        transform: rotate(0);
+      }
+      animation-fill-mode: backwards;
+    }
+  }
+}
