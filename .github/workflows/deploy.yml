@@ -47,13 +47,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+
+      - name: Clear branch contents
+        run: |
+          git rm -rf .
+          git clean -fxd
       - name: Download build artifacts
         uses: actions/download-artifact@v6
         with:
           name: main-site-dist
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: .
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Update branch by replacing all contents with latest artifacts"
+          git push
