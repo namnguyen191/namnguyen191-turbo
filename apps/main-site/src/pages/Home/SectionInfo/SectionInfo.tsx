@@ -12,10 +12,18 @@ export const SectionInfo = (): ReactElement => {
       <div className={styles['container']}>
         <h3>About Me</h3>
         <p>
-          Hi there! I&apos;m Nam Nguyen from Toronto, Canada. I&apos;m currently a Full-time
-          Front-end Developer at IBM. I recently graduated from York University and got my Bsc in
-          Computer Science. I&apos;m a huge fan of web development and love spending my time
-          learning more about web-based technologies.
+          Hi! I&apos;m Nam Nguyen, a Cloud Developer specializing in Frontend, based in Toronto,
+          Canada.
+          <br />
+          <br />
+          While my primary focus is frontend engineering, I work across the full stack and enjoy
+          designing systems end-to-end. My experience includes building complex front-end
+          applications with Angular, React, and TypeScript, managing large-scale codebases using NX
+          monorepos, and developing backend services with .NET.
+          <br />
+          <br />
+          I&apos;m passionate about building performant, maintainable web applications, improving
+          developer experience, and continuously exploring modern web technologies.
         </p>
         <span className={styles['quote']}>
           “ Your mind is programmable – if you&apos;re not programming your mind, someone else will
